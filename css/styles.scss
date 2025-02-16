@@ -1,0 +1,45 @@
+@import './colors';
+
+.bz-body {
+    background-color: $alternative;
+    .bz-navbar {
+        font-size: medium;
+        .bz-navItem {
+            height: 3em;
+            align-content: center;
+            .nav-link {
+                color: $fontPrim;
+            }
+            .nav-link:hover {
+                color: $fontTer;
+                background-color: $white;
+            }
+            .bz-navActive {
+                background-color: $secondary;
+            }
+            }
+        }
+        .main{
+            overflow-y: auto;
+        }
+        .bz-footer {
+            background-color: $primary;
+            .socialText {
+                font-size: 28px;
+                justify-self: center;
+                color: $fontPrim;
+            }
+            .bz-socialIcons {
+                margin: 20px 0px;
+                height: 50px;
+                filter: invert(100);
+                transition: .8s;
+            }
+            .bz-socialIcons:hover {
+                transform: rotateY(360deg);
+            }
+            .bz-email {
+                align-self: center;
+            }
+        }
+    }

@@ -1,0 +1,45 @@
+.bz-body {
+  background-color: #78608E;
+}
+.bz-body .bz-navbar {
+  font-size: medium;
+}
+.bz-body .bz-navbar .bz-navItem {
+  height: 3em;
+  align-content: center;
+}
+.bz-body .bz-navbar .bz-navItem .nav-link {
+  color: #ffffff;
+}
+.bz-body .bz-navbar .bz-navItem .nav-link:hover {
+  color: #341E47;
+  background-color: #ffffff;
+}
+.bz-body .bz-navbar .bz-navItem .bz-navActive {
+  background-color: #45285F;
+}
+.bz-body .main {
+  overflow-y: auto;
+}
+.bz-body .bz-footer {
+  background-color: #341E47;
+}
+.bz-body .bz-footer .socialText {
+  font-size: 28px;
+  justify-self: center;
+  color: #ffffff;
+}
+.bz-body .bz-footer .bz-socialIcons {
+  margin: 20px 0px;
+  height: 50px;
+  filter: invert(100);
+  transition: 0.8s;
+}
+.bz-body .bz-footer .bz-socialIcons:hover {
+  transform: rotateY(360deg);
+}
+.bz-body .bz-footer .bz-email {
+  align-self: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
