@@ -18,8 +18,85 @@
 .bz-body .bz-navbar .bz-navItem .bz-navActive {
   background-color: #45285F;
 }
-.bz-body .main {
-  overflow-y: auto;
+.bz-body .bz-mainInfo {
+  background-color: #341E47;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 2em;
+}
+.bz-body .bz-mainInfo .title {
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+}
+.bz-body .bz-mainInfo .pText {
+  font-size: larger;
+  color: #ffffff;
+}
+.bz-body .bigTitle {
+  font-size: 3em;
+  color: #341E47;
+  text-align: center;
+}
+.bz-body .bz-myPhoto {
+  width: 100%;
+  height: 100%;
+  margin-left: 2.5em;
+  border: 2px solid #341E47;
+  transition: 0.8s;
+  mask: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 40%, #000, rgba(0, 0, 0, 0.8) 60%) 100% 100%/240% 240%;
+}
+.bz-body .bz-myPhoto:hover {
+  transform: perspective(600px) rotate3d(1, 1, 1, -4deg);
+  mask-position: 0 0;
+}
+.bz-body .bz-card {
+  background-color: #341E47;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.bz-body .bz-card .card-body .bz-skillBtn {
+  transition: transform 0.4s ease-out;
+}
+.bz-body .bz-card .card-body .bz-skillBtn:hover {
+  transform: translateY(-5px);
+}
+.bz-body .bz-card .bz-skillsIcon {
+  width: 70%;
+  margin: auto;
+  margin-top: 1em;
+  fill: #ffffff;
+  transition: 1.2s;
+  z-index: 3;
+}
+.bz-body .bz-card .bz-skillsIcon:hover {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+.bz-body .bz-card .bz-skillsIcon::before {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+.bz-body .subTitle {
+  font-size: xx-large;
+  text-align: center;
+}
+.bz-body .smallText {
+  font-size: medium;
+  color: #c4c0c0;
+  text-align: center;
+}
+.bz-body .bz-acordBtn {
+  background-color: #78608E;
+  color: #000000;
+}
+.bz-body .bz-acordBtn::after {
+  filter: grayscale(100%);
 }
 .bz-body .bz-footer {
   background-color: #341E47;
@@ -40,6 +117,10 @@
 }
 .bz-body .bz-footer .bz-email {
   align-self: center;
+  transition: transform 0.4s ease-out;
+}
+.bz-body .bz-footer .bz-email:hover {
+  transform: translateY(-5px);
 }
 
 /*# sourceMappingURL=styles.css.map */

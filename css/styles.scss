@@ -19,9 +19,92 @@
             }
             }
         }
-        .main{
-            overflow-y: auto;
+        .bz-mainInfo {
+            background-color: $primary;
+            border: 1px solid $white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-left: 2em;
+
+            .title {
+                font-size: 3em;
+                color: $fontPrim;
+                text-align: center;
+            }
+            .pText {
+                font-size: larger;
+                color: $fontPrim;
+            }
         }
+        .bigTitle {
+            font-size: 3em;
+            color: $fontTer;
+            text-align: center;;
+        }
+        .bz-myPhoto {
+            width: 100%;
+            height: 100%;
+            margin-left: 2.5em;
+            border: 2px solid $primary;
+            transition: 0.8s;
+            mask:
+                linear-gradient(135deg, #000c 40%, #000, #000c 60%)
+                100% 100%/
+                240% 240%;
+        }
+        .bz-myPhoto:hover {
+            transform: perspective(600px) rotate3d(1, 1, 1, -4deg);
+            mask-position: 0 0;
+        }
+        .bz-card {
+            background-color: $primary;
+            color: $fontPrim;
+            border: 1px solid $white;
+            .card-body {
+                .bz-skillBtn {
+                    transition: transform 0.4s ease-out;
+                }
+                .bz-skillBtn:hover {
+                    transform: translateY(-5px);
+                }
+            }
+            .bz-skillsIcon {
+                width: 70%;
+                margin: auto;
+                margin-top: 1em;
+                fill: $white;
+                transition: 1.2s;
+                z-index: 3;
+            }
+            .bz-skillsIcon:hover {
+                color: #fff;
+                transform: rotateY(360deg);
+            }
+            .bz-skillsIcon::before {
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .5s;
+                z-index: 2;
+            }
+        }
+        .subTitle {
+            font-size: xx-large;
+            text-align: center;
+        }
+        .smallText {
+            font-size: medium;
+            color: $fontAlt;
+            text-align: center;
+        }
+        .bz-acordBtn {
+            background-color: $alternative;
+            color: $fontSec;
+        } 
+        .bz-acordBtn::after {
+            filter: grayscale(100%);
+        }      
         .bz-footer {
             background-color: $primary;
             .socialText {
@@ -40,6 +123,10 @@
             }
             .bz-email {
                 align-self: center;
+                transition: transform 0.4s ease-out;
+            }
+            .bz-email:hover {
+                transform: translateY(-5px);
             }
         }
     }
