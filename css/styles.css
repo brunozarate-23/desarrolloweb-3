@@ -123,4 +123,10 @@
   transform: translateY(-5px);
 }
 
+.title {
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
